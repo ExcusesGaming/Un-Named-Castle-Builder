@@ -110,6 +110,7 @@ namespace Excuses.Libraries.UI
         public void Awake()
         {
             Instance = this;
+            //test
         }
     }
 }

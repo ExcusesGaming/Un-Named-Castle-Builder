@@ -6,15 +6,9 @@ using UnityEngine;
 namespace Excuses.UI
 {
 
-    public class LayoutData
-=======
     [System.Serializable]
     public class LayoutData
->>>>>>> cc1c53bf7eb5b55d3f2ae3017144b2cdc51da241
     {
-<<<<<<< HEAD
-
-=======
         public Vector4 Border;
         public float Spacing;
         public Vector2 GridSpacing;
@@ -37,30 +31,10 @@ namespace Excuses.UI
             GridSpacing = _gridSpacing;
             GridCellSize = _gridCellSize;
         }
->>>>>>> cc1c53bf7eb5b55d3f2ae3017144b2cdc51da241
     }
-
-<<<<<<< HEAD
-
-    public class UIMaster : MonoBehaviour
-=======
     [System.Serializable]
     public class SpriteData
->>>>>>> cc1c53bf7eb5b55d3f2ae3017144b2cdc51da241
     {
-<<<<<<< HEAD
-        // Start is called before the first frame update
-        void Start()
-        {
-        
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
-=======
         public Sprite sprite;
         public Color32 color;
 
@@ -69,10 +43,7 @@ namespace Excuses.UI
             this.sprite = sprite;
             this.color = color;
         }
->>>>>>> cc1c53bf7eb5b55d3f2ae3017144b2cdc51da241
     }
-<<<<<<< HEAD
-=======
 
     [System.Serializable]
     public class TextData
@@ -116,7 +87,4 @@ namespace Excuses.UI
             ImageUI newImage = new ImageUI("Test", this.gameObject, true);
         }
     }
-}
->>>>>>> cc1c53bf7eb5b55d3f2ae3017144b2cdc51da241
-
 }

@@ -79,6 +79,18 @@ namespace Excuses.UI
         }
     }
 
+    [System.Serializable]
+    public class Scales 
+    {
+        public enum ScaleTypes
+        {
+            Default,
+            ExpandAll,
+            ExpandX,
+            ExpandY
+        }
+    }
+
     public class UIMaster : MonoBehaviour
     {
 

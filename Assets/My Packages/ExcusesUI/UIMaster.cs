@@ -75,7 +75,10 @@ namespace Excuses.UI
             CenterRight,
             BottomMiddle,
             BottomLeft,
-            BottomRight
+            BottomRight,
+            ScaleHorizontal,
+            ScaleVertical,
+            ScaleAll
         }
     }
 

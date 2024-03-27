@@ -99,7 +99,11 @@ namespace Excuses.UI
 
         public void Awake()
         {
-            ImageUI newImage = new ImageUI("Test", this.gameObject, true);
+            ImageUI newImage = new ImageUI("Test", this.gameObject, true)
+                .setSprites(new SpriteData(SpriteDatabase.instance.BackgroundSprite, new Color32(100, 100, 100, 100)))
+                .setAnchor(Anchors.AnchorTypes.CenterLeft)
+                .SetSize(Scales.ScaleTypes.Default, new Vector2(100,50))
+                .setPosition(100, 0);
         }
     }
 }

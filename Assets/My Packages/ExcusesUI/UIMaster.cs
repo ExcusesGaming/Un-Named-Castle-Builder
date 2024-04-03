@@ -97,13 +97,27 @@ namespace Excuses.UI
     public class UIMaster : MonoBehaviour
     {
 
-        public void Awake()
+        public void Start()
         {
             ImageUI newImage = new ImageUI("Test", this.gameObject, true)
-                .setSprites(new SpriteData(SpriteDatabase.instance.BackgroundSprite, new Color32(100, 100, 100, 100)))
+                .setSprites(new SpriteData(SpriteDatabase.instance.BackgroundSprite, new Color32(100, 100, 100, 200)))
                 .setAnchor(Anchors.AnchorTypes.CenterLeft)
                 .SetSize(Scales.ScaleTypes.Default, new Vector2(100,50))
                 .setPosition(100, 0);
+
+            ButtonUI newButton = new ButtonUI("Button", this.gameObject)
+                .setSprites(new SpriteData(SpriteDatabase.instance.BackgroundSprite, new Color32(150, 150, 150, 200)), new SpriteData(SpriteDatabase.instance.ReverseBackgroundSprite, new Color32(150, 150, 150, 200)), new SpriteData(SpriteDatabase.instance.HoverSprite, new Color32(220, 220, 220, 200)))
+                .setAnchor(Anchors.AnchorTypes.CenterLeft)
+                .SetSize(Scales.ScaleTypes.Default, new Vector2(200, 50))
+                .setPosition(150, 100)
+                .addText(new TextData("Testing", 24, new Color32(0,0,0,255), TextAlignmentOptions.Left), new Vector4(10,10,10,10));
+
+            ButtonUI newButton2 = new ButtonUI("Button2", this.gameObject)
+                .setSprites(new SpriteData(SpriteDatabase.instance.BackgroundSprite, new Color32(150, 150, 150, 200)), new SpriteData(SpriteDatabase.instance.ReverseBackgroundSprite, new Color32(150, 150, 150, 200)), new SpriteData(SpriteDatabase.instance.HoverSprite, new Color32(220, 220, 220, 200)))
+                .setAnchor(Anchors.AnchorTypes.CenterLeft)
+                .SetSize(Scales.ScaleTypes.Default, new Vector2(200, 50))
+                .setPosition(150, 250)
+                .addIcon(new SpriteData(SpriteDatabase.instance.icon, new Color32(255, 255, 255, 200)), new Vector4(84,10,84,10), false);
         }
     }
 }
